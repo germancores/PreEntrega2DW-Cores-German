@@ -1,37 +1,41 @@
 header {
     z-index: 1;
-    background-color: rgba(120,198,195,255)
-    ;
+    background-color: rgba(120, 198, 195, 255);
     width: 100%;
 }
 
 
 body {
-background-color: rgba(120,198,195,255);
-color: white;
-font-family: 'Bayon', sans-serif;
+    background-color: rgba(120, 198, 195, 255);
+    color: white;
+    font-family: 'Bayon', sans-serif;
 }
 
 
-h1{
+h1 {
     text-align: center;
     font-size: xx-large;
 }
 
 h2 {
-    
-    text-align: center;
-    color: rgb(255, 255, 255);}
 
-ul {list-style: none;}
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    list-style: none;
+}
 
 h3 {
     color: white;
     font-size: xx-large;
 }
 
-a { text-decoration: none;
-color: rgb(255, 255, 255);}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 
 
 img {
@@ -39,13 +43,14 @@ img {
 }
 
 .card {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    background-color: rgba(120,198,195,255)
-    
+    border: none;
+    justify-items: center;
+    background-color: rgba(120, 198, 195, 255)
 }
 
 
@@ -60,9 +65,9 @@ img {
         flex-flow: row;
         justify-content: center;
         gap: 30px;
-        margin: 50px; 
+        margin: 50px;
 
-        }
+    }
 
 }
 
@@ -70,11 +75,11 @@ img {
     .card {
         grid-template-columns: repeat(3, 1fr);
         row-gap: 25px;
-}
+    }
 
-.video-separacion {
-    padding: 0.5rem;
-}
+    .video-separacion {
+        padding: 0.5rem;
+    }
 
 }
 
@@ -87,19 +92,19 @@ img {
 
 .footer-enlinea {
     display: grid;
-    grid-template-areas: 
-    "footer1 footer2";
- }
- 
- .footer1 {
-     grid-area: footer1;
-     margin-left: 10px;
- }
- 
- .footer2 {
-     grid-area: footer2;
-     margin-right: 10px;
- }
+    grid-template-areas:
+        "footer1 footer2";
+}
+
+.footer1 {
+    grid-area: footer1;
+    margin-left: 10px;
+}
+
+.footer2 {
+    grid-area: footer2;
+    margin-right: 10px;
+}
 
 
 .tamaño-logo {
@@ -107,25 +112,25 @@ img {
 }
 
 .parrafo {
-width: 50%;
+    width: 50%;
 }
 
 .video-centro {
     text-align: center;
-}    
+}
 
 .navbar-brand {
-    background-color: rgba(120,198,195,255);
+    background-color: rgba(120, 198, 195, 255);
     width: 50%;
 }
 
 .navbar-toggler {
-    background-color: rgba(120,198,195,255);
+    background-color: rgba(120, 198, 195, 255);
     border-color: white;
 }
 
 .fondo-nav {
-    background-color: rgba(120,198,195,255);
+    background-color: rgba(120, 198, 195, 255);
 }
 
 .nav-link {
@@ -134,7 +139,7 @@ width: 50%;
 
 .navbar-toggler-icon {
     background: url('https://api.iconify.design/mdi/hamburger-menu.svg?color=white') no-repeat center center / contain;
-    
+
 }
 
 .navbar-nav {
@@ -151,9 +156,9 @@ width: 50%;
 
     .video-derecha {
         display: grid;
-        grid-template-areas: 
-        "parrafo1 video"
-        "parrafo2 video";
+        grid-template-areas:
+            "parrafo1 video"
+            "parrafo2 video";
         grid-template-rows: 2fr 3fr;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
@@ -166,7 +171,7 @@ width: 50%;
 
 .parrafo2 {
     grid-area: parrafo2;
-text-align: left;
+    text-align: left;
 }
 
 .video {
@@ -180,11 +185,11 @@ text-align: left;
     flex-flow: wrap;
     justify-content: center;
     gap: 30px;
-    margin: 50px; 
+    margin: 50px;
 }
 
 .mapa {
-text-align: center;
+    text-align: center;
 }
 
 .discografia {
@@ -192,5 +197,9 @@ text-align: center;
     flex-flow: wrap;
     justify-content: center;
     gap: 30px;
-    margin: 50px; 
+    margin: 50px;
+}
+
+.video-tamaño {
+    width: 100%;
 }
