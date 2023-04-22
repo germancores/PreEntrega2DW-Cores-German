@@ -1,0 +1,196 @@
+header {
+    z-index: 1;
+    background-color: rgba(120,198,195,255)
+    ;
+    width: 100%;
+}
+
+
+body {
+background-color: rgba(120,198,195,255);
+color: white;
+font-family: 'Bayon', sans-serif;
+}
+
+
+h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2 {
+    
+    text-align: center;
+    color: rgb(255, 255, 255);}
+
+ul {list-style: none;}
+
+h3 {
+    color: white;
+    font-size: xx-large;
+}
+
+a { text-decoration: none;
+color: rgb(255, 255, 255);}
+
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: rgba(120,198,195,255)
+    
+}
+
+
+@media (min-width: 768px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .video-galeria {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        gap: 30px;
+        margin: 50px; 
+
+        }
+
+}
+
+@media (min-width: 992px) {
+    .card {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 25px;
+}
+
+.video-separacion {
+    padding: 0.5rem;
+}
+
+}
+
+
+
+.card-img {
+    height: 300px;
+    width: 500px;
+}
+
+.footer-enlinea {
+    display: grid;
+    grid-template-areas: 
+    "footer1 footer2";
+ }
+ 
+ .footer1 {
+     grid-area: footer1;
+     margin-left: 10px;
+ }
+ 
+ .footer2 {
+     grid-area: footer2;
+     margin-right: 10px;
+ }
+
+
+.tamaño-logo {
+    width: 100px;
+}
+
+.parrafo {
+width: 50%;
+}
+
+.video-centro {
+    text-align: center;
+}    
+
+.navbar-brand {
+    background-color: rgba(120,198,195,255);
+    width: 50%;
+}
+
+.navbar-toggler {
+    background-color: rgba(120,198,195,255);
+    border-color: white;
+}
+
+.fondo-nav {
+    background-color: rgba(120,198,195,255);
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background: url('https://api.iconify.design/mdi/hamburger-menu.svg?color=white') no-repeat center center / contain;
+    
+}
+
+.navbar-nav {
+    font-size: x-large;
+}
+
+@media (min-width: 992px) {
+    .tamaño-img img {
+
+        height: 900px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .video-derecha {
+        display: grid;
+        grid-template-areas: 
+        "parrafo1 video"
+        "parrafo2 video";
+        grid-template-rows: 2fr 3fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+.parrafo1 {
+    grid-area: parrafo1;
+}
+
+.parrafo2 {
+    grid-area: parrafo2;
+text-align: left;
+}
+
+.video {
+    grid-area: video;
+    align-self: center;
+}
+
+
+.video-galeria {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px; 
+}
+
+.mapa {
+text-align: center;
+}
+
+.discografia {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px; 
+}
